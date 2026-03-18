@@ -1,0 +1,10 @@
+h5py
+numpy
+opencv-python
+gdown
+imageio
+pillow
+matplotlib
+scipy
+tqdm
+tabulate

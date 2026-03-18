@@ -1,0 +1,17 @@
+{
+    "embed_dim": 64,
+    "visual_cfg": {
+        "model_name": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+        "freeze_backbone": true,
+        "time_pool": "mean"
+    },
+    "tactile_cfg": {
+        "encoder_type": "cnnet"
+    },
+    "pose_cfg": {
+        "normalize_mode": "simple"
+    },
+    "enabled_modalities": ["visual", "tactile"],
+    "fusion_method": "concat",
+    "normalize": true
+}

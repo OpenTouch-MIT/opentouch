@@ -1,0 +1,40 @@
+# Deep Learning Frameworks
+torch>=2.0
+torchvision
+
+# Data Processing
+numpy>=1.24.0
+h5py>=3.8.0
+scipy
+pandas
+
+# Computer Vision
+pillow
+opencv-python
+imageio
+
+# Machine Learning Utils
+scikit-learn>=1.2.0
+
+# Visualization
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# Logging & Monitoring
+wandb>=0.15.0
+termcolor>=2.3.0
+
+# Video Processing
+imageio[ffmpeg]
+
+# Hugging Face
+datasets
+transformers
+
+# File system
+fsspec
+
+# Render (for preprocessing only)
+smplx
+trimesh
+pyrender

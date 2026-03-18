@@ -1,0 +1,46 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "opentouch"
+authors = []
+description = "Cross-modal retrieval for visual, tactile, and pose modalities."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["pytorch", "tactile", "visual", "pose", "cross-modal", "retrieval", "contrastive-learning"]
+license = {text = "MIT"}
+dependencies = [
+    'torch>=2.0',
+    'torchvision',
+    'tqdm',
+    'numpy',
+    'transformers',
+    'datasets',
+    'pillow',
+    'wandb',
+    'scikit-learn',
+    'h5py',
+    'opencv-python',
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+rendering = [
+    'trimesh',
+    'pyrender',
+    'smplx',
+    'scipy',
+    'matplotlib',
+    'chumpy',
+    'tabulate',
+]
+
+[tool.pdm.version]
+source = "file"
+path = "src/opentouch/version.py"
+
+[tool.pdm.build]
+excludes = ["./**/.git", "./**/logs/*"]
+package-dir = "src"
+includes = ["src/opentouch", "src/opentouch_train"]

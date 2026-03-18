@@ -1,0 +1,7 @@
+IMAGENET_MEAN = (0.485, 0.456, 0.406)
+IMAGENET_STD = (0.229, 0.224, 0.225)
+
+LOGIT_SCALE_MIN = 0.0
+LOGIT_SCALE_MAX = 4.605170186  # ln(100)
+
+HF_WEIGHTS_NAME = "opentouch_pytorch_model.bin"
